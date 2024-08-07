@@ -1,0 +1,15 @@
+<h2>Simple Addition Calculator</h2>
+
+<div>
+  <label for="number1">Number 1:</label>
+  <input id="number1" type="number" [(ngModel)]="number1">
+</div>
+
+<div>
+  <label for="number2">Number 2:</label>
+  <input id="number2" type="number" [(ngModel)]="number2">
+</div>
+
+<button (click)="addNumbers()">Add Numbers</button>
+
+<app-result-display [result]="result"></app-result-display>
